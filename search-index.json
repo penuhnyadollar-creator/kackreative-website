@@ -1,0 +1,122 @@
+{
+  "version": "1.0",
+  "lastUpdated": "2025-01-20",
+  "pages": [
+    {
+      "id": "home",
+      "type": "page",
+      "title": "Beranda - KAC Kreative",
+      "description": "Jasa pembuatan website landing page, desain logo & banner, verifikasi Google Business, optimasi Google Maps dan SEO profesional di Indonesia.",
+      "url": "index.html",
+      "keywords": ["kac kreative", "jasa website", "digital agency", "indonesia"]
+    },
+    {
+      "id": "layanan-website",
+      "type": "service",
+      "title": "Pembuatan Website Landing Page",
+      "description": "Website profesional yang dioptimasi untuk konversi, loading cepat, dan tampilan menarik di semua perangkat. Desain modern & responsif, optimasi kecepatan loading, SEO on-page terintegrasi, free domain & hosting 1 tahun.",
+      "url": "index.html#layanan",
+      "keywords": ["website", "landing page", "web design", "responsive", "seo"]
+    },
+    {
+      "id": "layanan-logo",
+      "type": "service",
+      "title": "Desain Logo & Banner",
+      "description": "Identitas visual yang kuat dan memorable untuk brand Anda, dibuat oleh desainer profesional. Logo unik & original, banner untuk sosial media, file vector berkualitas tinggi, revisi unlimited.",
+      "url": "index.html#layanan",
+      "keywords": ["logo", "banner", "desain", "branding", "visual identity"]
+    },
+    {
+      "id": "layanan-gbp",
+      "type": "service",
+      "title": "Verifikasi Google Business",
+      "description": "Bantu verifikasi profil bisnis Anda di Google agar muncul di hasil pencarian dan Google Maps. Proses verifikasi cepat, setup profil lengkap, optimasi informasi bisnis, panduan pengelolaan.",
+      "url": "index.html#layanan",
+      "keywords": ["google business", "gbp", "google my business", "verifikasi", "profil bisnis"]
+    },
+    {
+      "id": "layanan-gmaps",
+      "type": "service",
+      "title": "Optimasi Google Maps",
+      "description": "Tingkatkan ranking bisnis Anda di Google Maps untuk menjangkau lebih banyak pelanggan lokal. Riset keyword lokal, optimasi listing bisnis, strategi review management, laporan bulanan.",
+      "url": "index.html#layanan",
+      "keywords": ["google maps", "local seo", "maps optimization", "bisnis lokal"]
+    },
+    {
+      "id": "layanan-seo",
+      "type": "service",
+      "title": "Jasa SEO Profesional",
+      "description": "Optimalkan website Anda agar muncul di halaman pertama Google untuk kata kunci yang relevan. Audit SEO komprehensif, optimasi on-page & off-page, content strategy, tracking & reporting.",
+      "url": "index.html#layanan",
+      "keywords": ["seo", "search engine optimization", "ranking google", "optimasi website"]
+    }
+  ],
+  "posts": [
+    {
+      "id": "post-seo-pemula",
+      "type": "article",
+      "title": "Cara Optimasi SEO Website untuk Pemula",
+      "description": "Pelajari teknik SEO dasar untuk meningkatkan ranking website Anda di Google. Panduan lengkap optimasi on-page dan off-page untuk pemula.",
+      "url": "blog/cara-optimasi-seo-pemula.html",
+      "category": "SEO",
+      "date": "2025-01-15",
+      "readTime": "5 menit",
+      "keywords": ["seo", "optimasi", "pemula", "ranking", "google", "on-page", "off-page"]
+    },
+    {
+      "id": "post-google-business",
+      "type": "article",
+      "title": "5 Alasan Bisnis Anda Butuh Google Business Profile",
+      "description": "Mengapa Google Business Profile penting untuk bisnis lokal? Simak 5 manfaat utama yang bisa meningkatkan visibilitas dan penjualan bisnis Anda.",
+      "url": "blog/alasan-bisnis-butuh-google-business.html",
+      "category": "Google Business",
+      "date": "2025-01-12",
+      "readTime": "4 menit",
+      "keywords": ["google business", "gbp", "bisnis lokal", "visibilitas", "penjualan"]
+    },
+    {
+      "id": "post-landing-page",
+      "type": "article",
+      "title": "Tips Membuat Landing Page yang Mengkonversi",
+      "description": "Landing page yang efektif bisa meningkatkan konversi hingga 300%. Pelajari elemen penting dan best practice dalam membuat landing page.",
+      "url": "blog/tips-landing-page-konversi.html",
+      "category": "Website",
+      "date": "2025-01-10",
+      "readTime": "6 menit",
+      "keywords": ["landing page", "konversi", "website", "cta", "desain"]
+    },
+    {
+      "id": "post-google-maps",
+      "type": "article",
+      "title": "Panduan Lengkap Optimasi Google Maps untuk Bisnis Lokal",
+      "description": "Tingkatkan visibilitas bisnis Anda di Google Maps dengan strategi optimasi yang tepat. Cocok untuk restoran, toko, dan jasa lokal.",
+      "url": "blog/panduan-optimasi-google-maps.html",
+      "category": "Google Maps",
+      "date": "2025-01-08",
+      "readTime": "7 menit",
+      "keywords": ["google maps", "bisnis lokal", "restoran", "toko", "jasa", "optimasi"]
+    },
+    {
+      "id": "post-desain-logo",
+      "type": "article",
+      "title": "Pentingnya Desain Logo untuk Branding Bisnis",
+      "description": "Logo adalah wajah bisnis Anda. Pelajari mengapa desain logo profesional penting dan bagaimana membuatnya memorable.",
+      "url": "blog/pentingnya-desain-logo.html",
+      "category": "Desain",
+      "date": "2025-01-05",
+      "readTime": "4 menit",
+      "keywords": ["logo", "branding", "desain", "identitas", "bisnis"]
+    },
+    {
+      "id": "post-content-marketing",
+      "type": "article",
+      "title": "Strategi Content Marketing untuk UMKM",
+      "description": "Bangun kehadiran online yang kuat dengan strategi content marketing yang tepat sasaran untuk bisnis UMKM Indonesia.",
+      "url": "blog/strategi-content-marketing-umkm.html",
+      "category": "Marketing",
+      "date": "2025-01-02",
+      "readTime": "5 menit",
+      "keywords": ["content marketing", "umkm", "strategi", "online", "indonesia"]
+    }
+  ]
+}
