@@ -1,0 +1,2220 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="KAC Kreative - Jasa pembuatan website landing page, desain logo & banner, verifikasi Google Business, optimasi Google Maps dan SEO profesional di Indonesia.">
+  <meta name="keywords" content="jasa website, landing page, desain logo, banner, google business, google maps, seo, indonesia">
+  <meta name="author" content="KAC Kreative">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="KAC Kreative - Digital Creative Agency Indonesia">
+  <meta property="og:description" content="Jasa pembuatan website, desain logo, optimasi Google Business & SEO profesional.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kackreative.com">
+  <meta property="og:image" content="https://kackreative.com/og-image.jpg">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="KAC Kreative - Digital Creative Agency">
+  <meta name="twitter:description" content="Jasa pembuatan website, desain logo, optimasi Google Business & SEO profesional.">
+
+  <title>KAC Kreative - Jasa Website, Logo, Google Business & SEO Indonesia</title>
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://kackreative.com">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎨</text></svg>">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #FAF7F0;
+      --surface: #FFFFFF;
+      --text: #111827;
+      --muted: #6B7280;
+      --border: #E7E2D7;
+
+      --brand: #FF2D8D;
+      --brand-dark: #C2185B;
+      --brand-light: #FFE4EF;
+
+      --gold: #D4AF37;
+      --gold-soft: #FFF2C2;
+
+      --trust: #0F2A4A;
+
+      --cta: #FF4D2E;
+      --cta-hover: #FF2F0A;
+
+      --success: #10B981;
+      --info: #3B82F6;
+
+      --gradient-brand: linear-gradient(135deg, var(--brand) 0%, var(--cta) 100%);
+      --gradient-gold: linear-gradient(135deg, var(--gold) 0%, #F4CF47 100%);
+      --gradient-trust: linear-gradient(135deg, var(--trust) 0%, #1E3A5F 100%);
+
+      --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+      --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+      --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+      --shadow-xl: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);
+
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 16px;
+      --radius-xl: 24px;
+
+      --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* ===== NAVBAR ===== */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+      transition: var(--transition);
+    }
+
+    .navbar.scrolled {
+      box-shadow: var(--shadow-md);
+    }
+
+    .nav-container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 72px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 1.5rem;
+      color: var(--trust);
+    }
+
+    .logo-icon {
+      width: 42px;
+      height: 42px;
+      background: var(--gradient-brand);
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: 800;
+      font-size: 1.1rem;
+    }
+
+    .logo span {
+      background: var(--gradient-brand);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 500;
+      padding: 10px 18px;
+      border-radius: var(--radius-md);
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .nav-links a:hover {
+      color: var(--brand);
+      background: var(--brand-light);
+    }
+
+    .nav-cta {
+      background: var(--gradient-brand) !important;
+      color: white !important;
+      font-weight: 600 !important;
+      box-shadow: 0 4px 14px rgba(255,45,141,0.4);
+    }
+
+    .nav-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(255,45,141,0.5) !important;
+    }
+
+    .mobile-toggle {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 8px;
+      background: none;
+      border: none;
+    }
+
+    .mobile-toggle span {
+      width: 24px;
+      height: 2.5px;
+      background: var(--text);
+      border-radius: 2px;
+      transition: var(--transition);
+    }
+
+    .mobile-toggle.active span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .mobile-toggle.active span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .mobile-toggle.active span:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+
+    /* ===== HERO SLIDER ===== */
+    .hero {
+      min-height: 100vh;
+      padding-top: 72px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-slider {
+      position: relative;
+      height: calc(100vh - 72px);
+    }
+
+    .slide {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: opacity 0.8s ease-in-out;
+      display: flex;
+      align-items: center;
+    }
+
+    .slide.active {
+      opacity: 1;
+      z-index: 1;
+    }
+
+    .slide-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+    .slide:nth-child(1) .slide-bg {
+      background: linear-gradient(135deg, #FAF7F0 0%, #FFE4EF 50%, #FFF2C2 100%);
+    }
+
+    .slide:nth-child(2) .slide-bg {
+      background: linear-gradient(135deg, #0F2A4A 0%, #1E3A5F 50%, #2D4A6F 100%);
+    }
+
+    .slide:nth-child(3) .slide-bg {
+      background: linear-gradient(135deg, #FFF2C2 0%, #FAF7F0 50%, #FFE4EF 100%);
+    }
+
+    .slide:nth-child(2) .slide-content {
+      color: white;
+    }
+
+    .slide:nth-child(2) .slide-content p {
+      color: rgba(255,255,255,0.8);
+    }
+
+    .slide-content {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .slide-text h1 {
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      font-weight: 800;
+      line-height: 1.1;
+      margin-bottom: 24px;
+    }
+
+    .slide-text h1 .highlight {
+      background: var(--gradient-brand);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .slide:nth-child(2) .slide-text h1 .highlight {
+      background: var(--gradient-gold);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .slide-text p {
+      font-size: 1.25rem;
+      color: var(--muted);
+      margin-bottom: 32px;
+      max-width: 500px;
+    }
+
+    .slide-buttons {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 16px 32px;
+      border-radius: var(--radius-lg);
+      font-weight: 600;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: var(--transition);
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn-primary {
+      background: var(--gradient-brand);
+      color: white;
+      box-shadow: 0 4px 14px rgba(255,45,141,0.4);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(255,45,141,0.5);
+    }
+
+    .btn-secondary {
+      background: var(--surface);
+      color: var(--text);
+      border: 2px solid var(--border);
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--brand);
+      color: var(--brand);
+    }
+
+    .slide:nth-child(2) .btn-secondary {
+      background: transparent;
+      border-color: rgba(255,255,255,0.3);
+      color: white;
+    }
+
+    .slide:nth-child(2) .btn-secondary:hover {
+      background: rgba(255,255,255,0.1);
+      border-color: white;
+    }
+
+    .slide-visual {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .visual-card {
+      width: 100%;
+      max-width: 480px;
+      aspect-ratio: 4/3;
+      background: var(--surface);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-xl);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 8rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .visual-card::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: conic-gradient(from 0deg, transparent, var(--brand-light), transparent 30%);
+      animation: rotate 8s linear infinite;
+    }
+
+    .visual-card::after {
+      content: '';
+      position: absolute;
+      inset: 3px;
+      background: var(--surface);
+      border-radius: calc(var(--radius-xl) - 3px);
+    }
+
+    .visual-card span {
+      position: relative;
+      z-index: 1;
+    }
+
+    @keyframes rotate {
+      100% { transform: rotate(360deg); }
+    }
+
+    .floating-badge {
+      position: absolute;
+      background: var(--surface);
+      padding: 12px 20px;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-lg);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    .floating-badge.top-left {
+      top: 10%;
+      left: -10%;
+      animation-delay: 0s;
+    }
+
+    .floating-badge.top-right {
+      top: 5%;
+      right: -5%;
+      animation-delay: 1s;
+    }
+
+    .floating-badge.bottom-left {
+      bottom: 15%;
+      left: -5%;
+      animation-delay: 0.5s;
+    }
+
+    .floating-badge.bottom-right {
+      bottom: 10%;
+      right: -10%;
+      animation-delay: 1.5s;
+    }
+
+    .badge-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+    }
+
+    .badge-icon.pink { background: var(--brand-light); }
+    .badge-icon.gold { background: var(--gold-soft); }
+    .badge-icon.blue { background: #E0F2FE; }
+    .badge-icon.green { background: #D1FAE5; }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    /* Slider Controls */
+    .slider-controls {
+      position: absolute;
+      bottom: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 12px;
+      z-index: 10;
+    }
+
+    .slider-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--border);
+      cursor: pointer;
+      transition: var(--transition);
+      border: none;
+    }
+
+    .slider-dot.active {
+      background: var(--brand);
+      transform: scale(1.2);
+    }
+
+    .slider-arrows {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 0 20px;
+      z-index: 10;
+      pointer-events: none;
+    }
+
+    .slider-arrow {
+      width: 50px;
+      height: 50px;
+      background: var(--surface);
+      border: none;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: var(--shadow-lg);
+      transition: var(--transition);
+      pointer-events: auto;
+      font-size: 1.2rem;
+    }
+
+    .slider-arrow:hover {
+      background: var(--brand);
+      color: white;
+      transform: scale(1.1);
+    }
+
+    /* ===== SEARCH SECTION ===== */
+    .search-section {
+      padding: 80px 24px;
+      background: var(--surface);
+    }
+
+    .search-container {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .search-title {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    .search-subtitle {
+      color: var(--muted);
+      margin-bottom: 32px;
+    }
+
+    .search-box {
+      position: relative;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 20px 60px 20px 24px;
+      font-size: 1.1rem;
+      border: 2px solid var(--border);
+      border-radius: var(--radius-xl);
+      background: var(--bg);
+      transition: var(--transition);
+      font-family: inherit;
+    }
+
+    .search-input:focus {
+      outline: none;
+      border-color: var(--brand);
+      box-shadow: 0 0 0 4px var(--brand-light);
+    }
+
+    .search-btn {
+      position: absolute;
+      right: 8px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 48px;
+      height: 48px;
+      background: var(--gradient-brand);
+      border: none;
+      border-radius: 50%;
+      color: white;
+      cursor: pointer;
+      transition: var(--transition);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+    }
+
+    .search-btn:hover {
+      transform: translateY(-50%) scale(1.1);
+    }
+
+    .search-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin-top: 24px;
+    }
+
+    .search-tag {
+      padding: 8px 16px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 50px;
+      font-size: 0.9rem;
+      color: var(--muted);
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .search-tag:hover {
+      border-color: var(--brand);
+      color: var(--brand);
+      background: var(--brand-light);
+    }
+
+    /* Search Results */
+    .search-results {
+      max-width: 800px;
+      margin: 32px auto 0;
+      text-align: left;
+      display: none;
+    }
+
+    .search-results.active {
+      display: block;
+    }
+
+    .results-count {
+      color: var(--muted);
+      margin-bottom: 16px;
+      font-size: 0.95rem;
+    }
+
+    .result-item {
+      padding: 20px;
+      background: var(--bg);
+      border-radius: var(--radius-md);
+      margin-bottom: 12px;
+      cursor: pointer;
+      transition: var(--transition);
+      border: 1px solid transparent;
+      text-decoration: none;
+      display: block;
+    }
+
+    .result-item:hover {
+      border-color: var(--brand);
+      transform: translateX(8px);
+    }
+
+    .result-type {
+      font-size: 0.75rem;
+      padding: 4px 10px;
+      border-radius: 50px;
+      display: inline-block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    .result-type.article { background: var(--brand-light); color: var(--brand); }
+    .result-type.service { background: var(--gold-soft); color: #B8860B; }
+    .result-type.page { background: #DBEAFE; color: #1D4ED8; }
+
+    .result-item h4 {
+      font-size: 1.1rem;
+      margin-bottom: 8px;
+      color: var(--trust);
+    }
+
+    .result-item p {
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+
+    .result-item mark {
+      background: var(--gold-soft);
+      color: var(--text);
+      padding: 0 4px;
+      border-radius: 4px;
+    }
+
+    .result-meta {
+      margin-top: 8px;
+      font-size: 0.85rem;
+      color: var(--muted);
+      display: flex;
+      gap: 16px;
+    }
+
+    .no-results {
+      text-align: center;
+      padding: 40px;
+      color: var(--muted);
+    }
+
+    .no-results span {
+      font-size: 3rem;
+      display: block;
+      margin-bottom: 16px;
+    }
+
+    .search-loading {
+      text-align: center;
+      padding: 20px;
+      color: var(--muted);
+    }
+
+    /* ===== SERVICES ===== */
+    .services {
+      padding: 100px 24px;
+      background: var(--bg);
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .section-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      background: var(--brand-light);
+      color: var(--brand);
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      margin-bottom: 16px;
+    }
+
+    .section-title {
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 800;
+      margin-bottom: 16px;
+    }
+
+    .section-subtitle {
+      font-size: 1.1rem;
+      color: var(--muted);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 24px;
+    }
+
+    .service-card {
+      background: var(--surface);
+      padding: 40px;
+      border-radius: var(--radius-xl);
+      border: 1px solid var(--border);
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: var(--gradient-brand);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: var(--transition);
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-xl);
+      border-color: transparent;
+    }
+
+    .service-card:hover::before {
+      transform: scaleX(1);
+    }
+
+    .service-icon {
+      width: 72px;
+      height: 72px;
+      border-radius: var(--radius-lg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      margin-bottom: 24px;
+    }
+
+    .service-icon.pink { background: var(--brand-light); }
+    .service-icon.gold { background: var(--gold-soft); }
+    .service-icon.blue { background: #DBEAFE; }
+    .service-icon.green { background: #D1FAE5; }
+    .service-icon.purple { background: #EDE9FE; }
+
+    .service-card h3 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: var(--trust);
+    }
+
+    .service-card p {
+      color: var(--muted);
+      margin-bottom: 20px;
+      line-height: 1.7;
+    }
+
+    .service-features {
+      list-style: none;
+      margin-bottom: 24px;
+    }
+
+    .service-features li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 0;
+      font-size: 0.95rem;
+      color: var(--text);
+    }
+
+    .service-features li::before {
+      content: '✓';
+      color: var(--success);
+      font-weight: bold;
+    }
+
+    .service-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--brand);
+      font-weight: 600;
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    .service-link:hover {
+      gap: 12px;
+    }
+
+    /* ===== BLOG ===== */
+    .blog {
+      padding: 100px 24px;
+      background: var(--surface);
+    }
+
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 32px;
+    }
+
+    .blog-card {
+      background: var(--bg);
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      transition: var(--transition);
+      border: 1px solid var(--border);
+    }
+
+    .blog-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-xl);
+    }
+
+    .blog-image {
+      width: 100%;
+      height: 220px;
+      background: var(--gradient-brand);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 4rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .blog-image::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.3), transparent);
+    }
+
+    .blog-category {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      padding: 6px 14px;
+      background: var(--surface);
+      color: var(--brand);
+      font-size: 0.8rem;
+      font-weight: 600;
+      border-radius: 50px;
+      z-index: 1;
+    }
+
+    .blog-content {
+      padding: 28px;
+    }
+
+    .blog-meta {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 12px;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .blog-meta span {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .blog-card h3 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: var(--trust);
+      line-height: 1.4;
+    }
+
+    .blog-card p {
+      color: var(--muted);
+      margin-bottom: 20px;
+      line-height: 1.7;
+    }
+
+    .blog-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--brand);
+      font-weight: 600;
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    .blog-link:hover {
+      gap: 12px;
+    }
+
+    .blog-more {
+      text-align: center;
+      margin-top: 48px;
+    }
+
+    /* ===== WHY CHOOSE US ===== */
+    .why-us {
+      padding: 100px 24px;
+      background: var(--trust);
+      color: white;
+    }
+
+    .why-us .section-badge {
+      background: rgba(255,255,255,0.1);
+      color: var(--gold);
+    }
+
+    .why-us .section-subtitle {
+      color: rgba(255,255,255,0.7);
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 32px;
+    }
+
+    .why-card {
+      text-align: center;
+      padding: 40px 24px;
+      background: rgba(255,255,255,0.05);
+      border-radius: var(--radius-xl);
+      border: 1px solid rgba(255,255,255,0.1);
+      transition: var(--transition);
+    }
+
+    .why-card:hover {
+      background: rgba(255,255,255,0.1);
+      transform: translateY(-8px);
+    }
+
+    .why-icon {
+      width: 80px;
+      height: 80px;
+      margin: 0 auto 24px;
+      background: var(--gradient-gold);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.2rem;
+    }
+
+    .why-card h3 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .why-card p {
+      color: rgba(255,255,255,0.7);
+      line-height: 1.7;
+    }
+
+    /* ===== STATS ===== */
+    .stats {
+      padding: 80px 24px;
+      background: var(--bg);
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 32px;
+      text-align: center;
+    }
+
+    .stat-item {
+      padding: 32px;
+    }
+
+    .stat-number {
+      font-size: 3.5rem;
+      font-weight: 800;
+      background: var(--gradient-brand);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 8px;
+    }
+
+    .stat-label {
+      font-size: 1.1rem;
+      color: var(--muted);
+      font-weight: 500;
+    }
+
+    /* ===== CTA ===== */
+    .cta {
+      padding: 100px 24px;
+      background: var(--gradient-brand);
+      text-align: center;
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 50%);
+      animation: pulse 4s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 0.5; }
+      50% { transform: scale(1.1); opacity: 1; }
+    }
+
+    .cta-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .cta h2 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 800;
+      margin-bottom: 16px;
+    }
+
+    .cta p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+      margin-bottom: 32px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta .btn-secondary {
+      background: white;
+      color: var(--brand);
+      border: none;
+    }
+
+    .cta .btn-secondary:hover {
+      background: var(--gold-soft);
+      transform: translateY(-3px);
+    }
+
+    /* ===== FOOTER ===== */
+    .footer {
+      background: var(--trust);
+      color: white;
+      padding: 80px 24px 32px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 48px;
+      margin-bottom: 48px;
+    }
+
+    .footer-brand .logo {
+      color: white;
+      margin-bottom: 20px;
+    }
+
+    .footer-brand .logo span {
+      background: var(--gradient-gold);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .footer-brand p {
+      color: rgba(255,255,255,0.7);
+      margin-bottom: 24px;
+      line-height: 1.7;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 12px;
+    }
+
+    .social-link {
+      width: 44px;
+      height: 44px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 1.2rem;
+      transition: var(--transition);
+    }
+
+    .social-link:hover {
+      background: var(--brand);
+      transform: translateY(-4px);
+    }
+
+    .footer-column h4 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 24px;
+      color: var(--gold);
+    }
+
+    .footer-links {
+      list-style: none;
+    }
+
+    .footer-links li {
+      margin-bottom: 14px;
+    }
+
+    .footer-links a {
+      color: rgba(255,255,255,0.7);
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    .footer-links a:hover {
+      color: white;
+      padding-left: 8px;
+    }
+
+    .footer-bottom {
+      padding-top: 32px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .footer-bottom p {
+      color: rgba(255,255,255,0.5);
+      font-size: 0.95rem;
+    }
+
+    /* ===== SCROLL TO TOP ===== */
+    .scroll-top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 50px;
+      height: 50px;
+      background: var(--gradient-brand);
+      color: white;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      box-shadow: var(--shadow-lg);
+      opacity: 0;
+      visibility: hidden;
+      transition: var(--transition);
+      z-index: 999;
+    }
+
+    .scroll-top.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .scroll-top:hover {
+      transform: translateY(-5px);
+    }
+
+    /* ===== MOBILE MENU ===== */
+    .mobile-menu {
+      position: fixed;
+      top: 72px;
+      left: 0;
+      right: 0;
+      background: var(--surface);
+      padding: 24px;
+      box-shadow: var(--shadow-xl);
+      transform: translateY(-100%);
+      opacity: 0;
+      visibility: hidden;
+      transition: var(--transition);
+      z-index: 999;
+    }
+
+    .mobile-menu.active {
+      transform: translateY(0);
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .mobile-menu a {
+      display: block;
+      padding: 16px;
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 500;
+      border-radius: var(--radius-md);
+      transition: var(--transition);
+    }
+
+    .mobile-menu a:hover {
+      background: var(--brand-light);
+      color: var(--brand);
+    }
+
+    .mobile-menu .nav-cta {
+      text-align: center;
+      margin-top: 16px;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 1024px) {
+      .slide-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 40px;
+      }
+
+      .slide-text p {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .slide-buttons {
+        justify-content: center;
+      }
+
+      .slide-visual {
+        order: -1;
+      }
+
+      .visual-card {
+        max-width: 350px;
+      }
+
+      .floating-badge {
+        display: none;
+      }
+
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+
+      .mobile-toggle {
+        display: flex;
+      }
+
+      .services-grid,
+      .blog-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .slider-arrows {
+        display: none;
+      }
+
+      .hero-slider {
+        height: auto;
+        min-height: calc(100vh - 72px);
+      }
+
+      .slide {
+        padding: 40px 0;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .visual-card {
+        max-width: 280px;
+        font-size: 5rem;
+      }
+
+      .why-grid,
+      .stats-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* ===== ANIMATIONS ===== */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ===== LOADING ===== */
+    .loading-overlay {
+      position: fixed;
+      inset: 0;
+      background: var(--surface);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      transition: opacity 0.5s ease;
+    }
+
+    .loading-overlay.hidden {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .loader {
+      width: 60px;
+      height: 60px;
+      border: 4px solid var(--border);
+      border-top-color: var(--brand);
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <!-- Loading Overlay -->
+  <div class="loading-overlay" id="loader">
+    <div class="loader"></div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <div class="logo-icon">K</div>
+        <span>KAC Kreative</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#home">Beranda</a></li>
+        <li><a href="#layanan">Layanan</a></li>
+        <li><a href="#artikel">Artikel</a></li>
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#kontak" class="nav-cta">Hubungi Kami</a></li>
+      </ul>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home">Beranda</a>
+    <a href="#layanan">Layanan</a>
+    <a href="#artikel">Artikel</a>
+    <a href="#tentang">Tentang</a>
+    <a href="#kontak" class="nav-cta">Hubungi Kami</a>
+  </div>
+
+  <!-- Hero Slider -->
+  <section class="hero" id="home">
+    <div class="hero-slider" id="heroSlider">
+      <!-- Slide 1 -->
+      <div class="slide active">
+        <div class="slide-bg"></div>
+        <div class="slide-content">
+          <div class="slide-text">
+            <h1>Wujudkan <span class="highlight">Website Impian</span> Bisnis Anda</h1>
+            <p>Kami membantu UMKM & bisnis lokal membangun kehadiran digital yang profesional dengan landing page modern & SEO-friendly.</p>
+            <div class="slide-buttons">
+              <a href="#kontak" class="btn btn-primary">Konsultasi Gratis →</a>
+              <a href="#layanan" class="btn btn-secondary">Lihat Layanan</a>
+            </div>
+          </div>
+          <div class="slide-visual">
+            <div class="visual-card"><span>💻</span></div>
+            <div class="floating-badge top-left">
+              <div class="badge-icon pink">🚀</div>
+              <span>Fast Loading</span>
+            </div>
+            <div class="floating-badge top-right">
+              <div class="badge-icon gold">⭐</div>
+              <span>Premium Quality</span>
+            </div>
+            <div class="floating-badge bottom-left">
+              <div class="badge-icon blue">📱</div>
+              <span>Mobile Ready</span>
+            </div>
+            <div class="floating-badge bottom-right">
+              <div class="badge-icon green">✓</div>
+              <span>SEO Optimized</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="slide">
+        <div class="slide-bg"></div>
+        <div class="slide-content">
+          <div class="slide-text">
+            <h1>Optimalkan <span class="highlight">Google Business</span> Anda</h1>
+            <p>Tingkatkan visibilitas bisnis di Google Maps & pencarian lokal. Dapatkan lebih banyak pelanggan dari area sekitar.</p>
+            <div class="slide-buttons">
+              <a href="#kontak" class="btn btn-primary">Mulai Sekarang →</a>
+              <a href="#layanan" class="btn btn-secondary">Pelajari Lebih</a>
+            </div>
+          </div>
+          <div class="slide-visual">
+            <div class="visual-card"><span>📍</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="slide">
+        <div class="slide-bg"></div>
+        <div class="slide-content">
+          <div class="slide-text">
+            <h1>Desain <span class="highlight">Logo & Banner</span> Profesional</h1>
+            <p>Brand identity yang memorable dan eye-catching untuk memperkuat citra bisnis Anda di mata pelanggan.</p>
+            <div class="slide-buttons">
+              <a href="#kontak" class="btn btn-primary">Pesan Desain →</a>
+              <a href="#layanan" class="btn btn-secondary">Lihat Portfolio</a>
+            </div>
+          </div>
+          <div class="slide-visual">
+            <div class="visual-card"><span>🎨</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slider Controls -->
+    <div class="slider-arrows">
+      <button class="slider-arrow" id="prevSlide" aria-label="Previous">←</button>
+      <button class="slider-arrow" id="nextSlide" aria-label="Next">→</button>
+    </div>
+
+    <div class="slider-controls" id="sliderDots">
+      <button class="slider-dot active" data-slide="0" aria-label="Slide 1"></button>
+      <button class="slider-dot" data-slide="1" aria-label="Slide 2"></button>
+      <button class="slider-dot" data-slide="2" aria-label="Slide 3"></button>
+    </div>
+  </section>
+
+  <!-- Search Section -->
+  <section class="search-section" id="cari">
+    <div class="search-container">
+      <h2 class="search-title">🔍 Cari Artikel & Informasi</h2>
+      <p class="search-subtitle">Temukan tips, tutorial, dan insight seputar digital marketing & website</p>
+
+      <div class="search-box">
+        <input type="text" class="search-input" id="searchInput" placeholder="Ketik kata kunci... (contoh: SEO, Google Business)">
+        <button class="search-btn" id="searchBtn" aria-label="Search">🔍</button>
+      </div>
+
+      <div class="search-tags" id="searchTags">
+        <!-- Tags will be dynamically generated from search index -->
+      </div>
+
+      <div class="search-results" id="searchResults">
+        <p class="results-count" id="resultsCount"></p>
+        <div id="resultsList"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="layanan">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">💼 Layanan Kami</span>
+        <h2 class="section-title">Solusi Digital Lengkap untuk Bisnis Anda</h2>
+        <p class="section-subtitle">Kami menyediakan berbagai layanan digital marketing untuk membantu bisnis Anda tumbuh di era digital</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <article class="service-card fade-in">
+          <div class="service-icon pink">💻</div>
+          <h3>Pembuatan Website Landing Page</h3>
+          <p>Website profesional yang dioptimasi untuk konversi, loading cepat, dan tampilan menarik di semua perangkat.</p>
+          <ul class="service-features">
+            <li>Desain modern & responsif</li>
+            <li>Optimasi kecepatan loading</li>
+            <li>SEO on-page terintegrasi</li>
+            <li>Free domain & hosting 1 tahun</li>
+          </ul>
+          <a href="#kontak" class="service-link">Pesan Sekarang →</a>
+        </article>
+
+        <!-- Service 2 -->
+        <article class="service-card fade-in">
+          <div class="service-icon gold">🎨</div>
+          <h3>Desain Logo & Banner</h3>
+          <p>Identitas visual yang kuat dan memorable untuk brand Anda, dibuat oleh desainer profesional.</p>
+          <ul class="service-features">
+            <li>Logo unik & original</li>
+            <li>Banner untuk sosial media</li>
+            <li>File vector berkualitas tinggi</li>
+            <li>Revisi unlimited</li>
+          </ul>
+          <a href="#kontak" class="service-link">Pesan Sekarang →</a>
+        </article>
+
+        <!-- Service 3 -->
+        <article class="service-card fade-in">
+          <div class="service-icon blue">✓</div>
+          <h3>Verifikasi Google Business</h3>
+          <p>Bantu verifikasi profil bisnis Anda di Google agar muncul di hasil pencarian dan Google Maps.</p>
+          <ul class="service-features">
+            <li>Proses verifikasi cepat</li>
+            <li>Setup profil lengkap</li>
+            <li>Optimasi informasi bisnis</li>
+            <li>Panduan pengelolaan</li>
+          </ul>
+          <a href="#kontak" class="service-link">Pesan Sekarang →</a>
+        </article>
+
+        <!-- Service 4 -->
+        <article class="service-card fade-in">
+          <div class="service-icon green">📍</div>
+          <h3>Optimasi Google Maps</h3>
+          <p>Tingkatkan ranking bisnis Anda di Google Maps untuk menjangkau lebih banyak pelanggan lokal.</p>
+          <ul class="service-features">
+            <li>Riset keyword lokal</li>
+            <li>Optimasi listing bisnis</li>
+            <li>Strategi review management</li>
+            <li>Laporan bulanan</li>
+          </ul>
+          <a href="#kontak" class="service-link">Pesan Sekarang →</a>
+        </article>
+
+        <!-- Service 5 -->
+        <article class="service-card fade-in">
+          <div class="service-icon purple">📈</div>
+          <h3>Jasa SEO Profesional</h3>
+          <p>Optimalkan website Anda agar muncul di halaman pertama Google untuk kata kunci yang relevan.</p>
+          <ul class="service-features">
+            <li>Audit SEO komprehensif</li>
+            <li>Optimasi on-page & off-page</li>
+            <li>Content strategy</li>
+            <li>Tracking & reporting</li>
+          </ul>
+          <a href="#kontak" class="service-link">Pesan Sekarang →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section class="blog" id="artikel">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">📝 Artikel Terbaru</span>
+        <h2 class="section-title">Tips & Insight Digital Marketing</h2>
+        <p class="section-subtitle">Baca artikel terbaru kami seputar website, SEO, dan strategi digital marketing</p>
+      </div>
+
+      <div class="blog-grid" id="blogGrid">
+        <!-- Blog cards will be dynamically generated from search index -->
+      </div>
+
+      <div class="blog-more">
+        <a href="#artikel" class="btn btn-secondary">Lihat Semua Artikel →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="why-us" id="tentang">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">⭐ Mengapa KAC Kreative?</span>
+        <h2 class="section-title">Partner Digital Terpercaya untuk Bisnis Anda</h2>
+        <p class="section-subtitle">Kami berkomitmen memberikan layanan terbaik dengan hasil yang terukur</p>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-card fade-in">
+          <div class="why-icon">🎯</div>
+          <h3>Fokus pada Hasil</h3>
+          <p>Setiap proyek dirancang untuk mencapai tujuan bisnis Anda, bukan sekadar tampilan cantik.</p>
+        </div>
+
+        <div class="why-card fade-in">
+          <div class="why-icon">💬</div>
+          <h3>Komunikasi Lancar</h3>
+          <p>Respons cepat dan update berkala memastikan Anda selalu tahu progress proyek.</p>
+        </div>
+
+        <div class="why-card fade-in">
+          <div class="why-icon">💰</div>
+          <h3>Harga Transparan</h3>
+          <p>Tidak ada biaya tersembunyi. Anda tahu persis apa yang Anda bayar sejak awal.</p>
+        </div>
+
+        <div class="why-card fade-in">
+          <div class="why-icon">🛡️</div>
+          <h3>Garansi Kepuasan</h3>
+          <p>Revisi hingga puas dan dukungan teknis setelah proyek selesai.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item fade-in">
+          <div class="stat-number" data-target="150">0</div>
+          <div class="stat-label">Proyek Selesai</div>
+        </div>
+        <div class="stat-item fade-in">
+          <div class="stat-number" data-target="98">0</div>
+          <div class="stat-label">% Klien Puas</div>
+        </div>
+        <div class="stat-item fade-in">
+          <div class="stat-number" data-target="50">0</div>
+          <div class="stat-label">Klien Aktif</div>
+        </div>
+        <div class="stat-item fade-in">
+          <div class="stat-number" data-target="5">0</div>
+          <div class="stat-label">Tahun Pengalaman</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta" id="kontak">
+    <div class="cta-content">
+      <h2>Siap Tingkatkan Bisnis Anda?</h2>
+      <p>Konsultasikan kebutuhan digital bisnis Anda secara gratis. Kami siap membantu Anda mencapai target!</p>
+      <a href="https://wa.me/6281260835454" class="btn btn-secondary" target="_blank" rel="noopener">
+        💬 Chat via WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <div class="logo-icon">K</div>
+            <span>KAC Kreative</span>
+          </a>
+          <p>Digital creative agency yang membantu bisnis lokal dan UMKM Indonesia membangun kehadiran online yang profesional dan efektif.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Instagram">📷</a>
+            <a href="#" class="social-link" aria-label="Facebook">👥</a>
+            <a href="#" class="social-link" aria-label="LinkedIn">💼</a>
+            <a href="#" class="social-link" aria-label="YouTube">🎬</a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Layanan</h4>
+          <ul class="footer-links">
+            <li><a href="#layanan">Website Landing Page</a></li>
+            <li><a href="#layanan">Desain Logo & Banner</a></li>
+            <li><a href="#layanan">Verifikasi Google Business</a></li>
+            <li><a href="#layanan">Optimasi Google Maps</a></li>
+            <li><a href="#layanan">Jasa SEO</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Perusahaan</h4>
+          <ul class="footer-links">
+            <li><a href="#tentang">Tentang Kami</a></li>
+            <li><a href="#artikel">Blog</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Karir</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Kontak</h4>
+          <ul class="footer-links">
+            <li><a href="/cdn-cgi/l/email-protection#bdd7dcded6c7d5dcd3dafdd6dcded6cfd8dcc9d4cbd893ded2d0">📧 <span class="__cf_email__" data-cfemail="0369626068796b626d644368626068716662776a75662d606c6e">[email&#160;protected]</span></a></li>
+            <li><a href="https://wa.me/6281260835454">📱 +62 812 3456 7890</a></li>
+            <li><a href="#">📍 Jakarta, Indonesia</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 KAC Kreative. Hak Cipta Dilindungi.</p>
+        <p>Made with ❤️ in Indonesia</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
+
+  <!-- Structured Data for SEO -->
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "KAC Kreative",
+    "description": "Jasa pembuatan website landing page, desain logo & banner, verifikasi Google Business, optimasi Google Maps dan SEO profesional di Indonesia.",
+    "url": "https://kackreative.com",
+    "telephone": "+62-812-3456-7890",
+    "email": "jackzhang@kackreative.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Jakarta",
+      "addressCountry": "ID"
+    },
+    "sameAs": [
+      "https://instagram.com/kackreative",
+      "https://facebook.com/kackreative"
+    ],
+    "priceRange": "$$"
+  }
+  </script>
+
+  <script>
+    // ===== SEARCH INDEX CONFIGURATION =====
+    // Path ke file search-index.json
+    // Ubah path ini sesuai lokasi file JSON Anda
+    const SEARCH_INDEX_PATH = 'search-index.json';
+
+    // Global search index data
+    let searchIndex = { pages: [], posts: [] };
+    let searchIndexLoaded = false;
+
+    // ===== LOAD SEARCH INDEX =====
+    async function loadSearchIndex() {
+      try {
+        const response = await fetch(SEARCH_INDEX_PATH);
+        if (!response.ok) {
+          throw new Error('Failed to load search index');
+        }
+        searchIndex = await response.json();
+        searchIndexLoaded = true;
+
+        // Generate search tags from keywords
+        generateSearchTags();
+
+        // Generate blog cards
+        generateBlogCards();
+
+        console.log('Search index loaded:', searchIndex.pages.length + searchIndex.posts.length, 'items');
+      } catch (error) {
+        console.error('Error loading search index:', error);
+        // Fallback: use embedded data
+        searchIndexLoaded = false;
+      }
+    }
+
+    // ===== GENERATE SEARCH TAGS =====
+    function generateSearchTags() {
+      const tagsContainer = document.getElementById('searchTags');
+
+      // Collect unique categories and popular keywords
+      const popularTags = new Set();
+
+      // Add categories from posts
+      searchIndex.posts.forEach(post => {
+        if (post.category) popularTags.add(post.category);
+      });
+
+      // Add some common keywords
+      const commonKeywords = ['SEO', 'Landing Page', 'Logo', 'Google Maps'];
+      commonKeywords.forEach(kw => popularTags.add(kw));
+
+      // Generate tag buttons
+      tagsContainer.innerHTML = Array.from(popularTags).slice(0, 6).map(tag =>
+        `<span class="search-tag" data-query="${tag}">${tag}</span>`
+      ).join('');
+
+      // Add click handlers
+      tagsContainer.querySelectorAll('.search-tag').forEach(tag => {
+        tag.addEventListener('click', () => {
+          searchInput.value = tag.dataset.query;
+          performSearch(tag.dataset.query);
+        });
+      });
+    }
+
+    // ===== GENERATE BLOG CARDS =====
+    function generateBlogCards() {
+      const blogGrid = document.getElementById('blogGrid');
+      const posts = searchIndex.posts.slice(0, 6); // Show max 6 posts
+
+      const categoryColors = {
+        'SEO': 'linear-gradient(135deg, #FF2D8D 0%, #FF4D2E 100%)',
+        'Google Business': 'linear-gradient(135deg, #0F2A4A 0%, #1E3A5F 100%)',
+        'Website': 'linear-gradient(135deg, #D4AF37 0%, #F4CF47 100%)',
+        'Google Maps': 'linear-gradient(135deg, #10B981 0%, #34D399 100%)',
+        'Desain': 'linear-gradient(135deg, #8B5CF6 0%, #A78BFA 100%)',
+        'Marketing': 'linear-gradient(135deg, #3B82F6 0%, #60A5FA 100%)'
+      };
+
+      const categoryEmojis = {
+        'SEO': '📊',
+        'Google Business': '📍',
+        'Website': '💻',
+        'Google Maps': '🗺️',
+        'Desain': '🎨',
+        'Marketing': '📱'
+      };
+
+      blogGrid.innerHTML = posts.map(post => {
+        const bgColor = categoryColors[post.category] || 'var(--gradient-brand)';
+        const emoji = categoryEmojis[post.category] || '📝';
+        const formattedDate = new Date(post.date).toLocaleDateString('id-ID', {
+          day: 'numeric', month: 'short', year: 'numeric'
+        });
+
+        return `
+          <article class="blog-card fade-in">
+            <div class="blog-image" style="background: ${bgColor};">
+              <span class="blog-category">${post.category}</span>
+              ${emoji}
+            </div>
+            <div class="blog-content">
+              <div class="blog-meta">
+                <span>📅 ${formattedDate}</span>
+                <span>⏱️ ${post.readTime} baca</span>
+              </div>
+              <h3>${post.title}</h3>
+              <p>${post.description.substring(0, 100)}...</p>
+              <a href="${post.url}" class="blog-link">Baca Selengkapnya →</a>
+            </div>
+          </article>
+        `;
+      }).join('');
+
+      // Re-observe fade-in elements
+      document.querySelectorAll('.blog-card.fade-in').forEach(el => fadeObserver.observe(el));
+    }
+
+    // ===== LOADING SCREEN =====
+    window.addEventListener('load', () => {
+      document.getElementById('loader').classList.add('hidden');
+      loadSearchIndex();
+    });
+
+    // ===== NAVBAR SCROLL EFFECT =====
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+    // ===== MOBILE MENU =====
+    const mobileToggle = document.getElementById('mobileToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    mobileToggle.addEventListener('click', () => {
+      mobileToggle.classList.toggle('active');
+      mobileMenu.classList.toggle('active');
+    });
+
+    // Close mobile menu on link click
+    document.querySelectorAll('.mobile-menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileToggle.classList.remove('active');
+        mobileMenu.classList.remove('active');
+      });
+    });
+
+    // ===== HERO SLIDER =====
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.slider-dot');
+    const prevBtn = document.getElementById('prevSlide');
+    const nextBtn = document.getElementById('nextSlide');
+    let currentSlide = 0;
+    let slideInterval;
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.remove('active');
+        dots[i].classList.remove('active');
+      });
+
+      currentSlide = (index + slides.length) % slides.length;
+      slides[currentSlide].classList.add('active');
+      dots[currentSlide].classList.add('active');
+    }
+
+    function nextSlide() {
+      showSlide(currentSlide + 1);
+    }
+
+    function prevSlideFunc() {
+      showSlide(currentSlide - 1);
+    }
+
+    function startSlider() {
+      slideInterval = setInterval(nextSlide, 5000);
+    }
+
+    function stopSlider() {
+      clearInterval(slideInterval);
+    }
+
+    prevBtn.addEventListener('click', () => {
+      stopSlider();
+      prevSlideFunc();
+      startSlider();
+    });
+
+    nextBtn.addEventListener('click', () => {
+      stopSlider();
+      nextSlide();
+      startSlider();
+    });
+
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => {
+        stopSlider();
+        showSlide(index);
+        startSlider();
+      });
+    });
+
+    startSlider();
+
+    // ===== SEARCH FUNCTIONALITY =====
+    const searchInput = document.getElementById('searchInput');
+    const searchBtn = document.getElementById('searchBtn');
+    const searchResults = document.getElementById('searchResults');
+    const resultsCount = document.getElementById('resultsCount');
+    const resultsList = document.getElementById('resultsList');
+
+    function performSearch(query) {
+      if (!query.trim()) {
+        searchResults.classList.remove('active');
+        return;
+      }
+
+      if (!searchIndexLoaded) {
+        resultsList.innerHTML = '<div class="search-loading">Memuat data pencarian...</div>';
+        searchResults.classList.add('active');
+        return;
+      }
+
+      const terms = query.toLowerCase().split(' ').filter(t => t.length > 0);
+
+      // Combine all searchable items
+      const allItems = [...searchIndex.pages, ...searchIndex.posts];
+
+      // Search with scoring
+      const results = allItems.map(item => {
+        const searchableText = [
+          item.title,
+          item.description,
+          item.category || '',
+          ...(item.keywords || [])
+        ].join(' ').toLowerCase();
+
+        let score = 0;
+        terms.forEach(term => {
+          // Title match = 3 points
+          if (item.title.toLowerCase().includes(term)) score += 3;
+          // Keyword match = 2 points
+          if (item.keywords && item.keywords.some(k => k.toLowerCase().includes(term))) score += 2;
+          // Description match = 1 point
+          if (item.description.toLowerCase().includes(term)) score += 1;
+        });
+
+        return { ...item, score };
+      })
+      .filter(item => item.score > 0)
+      .sort((a, b) => b.score - a.score);
+
+      displayResults(results, query);
+    }
+
+    function displayResults(results, query) {
+      searchResults.classList.add('active');
+
+      if (results.length === 0) {
+        resultsCount.textContent = '';
+        resultsList.innerHTML = `
+          <div class="no-results">
+            <span>🔍</span>
+            <p>Tidak ada hasil untuk "${query}"</p>
+            <p>Coba kata kunci lain atau lihat artikel kami di bawah</p>
+          </div>
+        `;
+        return;
+      }
+
+      resultsCount.textContent = `Ditemukan ${results.length} hasil untuk "${query}"`;
+
+      resultsList.innerHTML = results.map(result => {
+        const highlightedTitle = highlightText(result.title, query);
+        const highlightedDesc = highlightText(result.description.substring(0, 150) + '...', query);
+
+        let metaHtml = '';
+        if (result.type === 'article') {
+          const date = new Date(result.date).toLocaleDateString('id-ID', {
+            day: 'numeric', month: 'short', year: 'numeric'
+          });
+          metaHtml = `<div class="result-meta"><span>📅 ${date}</span><span>⏱️ ${result.readTime}</span></div>`;
+        }
+
+        return `
+          <a href="${result.url}" class="result-item">
+            <span class="result-type ${result.type}">${result.type === 'article' ? 'Artikel' : result.type === 'service' ? 'Layanan' : 'Halaman'}</span>
+            <h4>${highlightedTitle}</h4>
+            <p>${highlightedDesc}</p>
+            ${metaHtml}
+          </a>
+        `;
+      }).join('');
+    }
+
+    function highlightText(text, query) {
+      const terms = query.toLowerCase().split(' ').filter(t => t.length > 0);
+      let result = text;
+
+      terms.forEach(term => {
+        const regex = new RegExp(`(${term})`, 'gi');
+        result = result.replace(regex, '<mark>$1</mark>');
+      });
+
+      return result;
+    }
+
+    searchBtn.addEventListener('click', () => performSearch(searchInput.value));
+    searchInput.addEventListener('keyup', (e) => {
+      if (e.key === 'Enter') {
+        performSearch(searchInput.value);
+      }
+    });
+
+    // Debounce for live search
+    let searchTimeout;
+    searchInput.addEventListener('input', () => {
+      clearTimeout(searchTimeout);
+      searchTimeout = setTimeout(() => {
+        performSearch(searchInput.value);
+      }, 300);
+    });
+
+    // ===== SCROLL TO TOP =====
+    const scrollTopBtn = document.getElementById('scrollTop');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 500) {
+        scrollTopBtn.classList.add('visible');
+      } else {
+        scrollTopBtn.classList.remove('visible');
+      }
+    });
+
+    scrollTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // ===== FADE IN ANIMATION =====
+    const fadeElements = document.querySelectorAll('.fade-in');
+
+    const fadeObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+    fadeElements.forEach(el => fadeObserver.observe(el));
+
+    // ===== COUNTER ANIMATION =====
+    const statNumbers = document.querySelectorAll('.stat-number');
+
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const target = parseInt(entry.target.dataset.target);
+          animateCounter(entry.target, target);
+          counterObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    function animateCounter(element, target) {
+      let current = 0;
+      const increment = target / 50;
+      const timer = setInterval(() => {
+        current += increment;
+        if (current >= target) {
+          element.textContent = target + '+';
+          clearInterval(timer);
+        } else {
+          element.textContent = Math.floor(current) + '+';
+        }
+      }, 30);
+    }
+
+    statNumbers.forEach(num => counterObserver.observe(num));
+
+    // ===== SMOOTH SCROLL =====
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
