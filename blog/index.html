@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Blog KAC Kreative - Tips, tutorial, dan insight seputar website, SEO, Google Business, dan digital marketing untuk bisnis Indonesia.">
+  <meta name="keywords" content="blog digital marketing, tips seo, google business, website bisnis, umkm digital">
+  <meta name="author" content="KAC Kreative">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Blog - KAC Kreative">
+  <meta property="og:description" content="Tips, tutorial, dan insight seputar website, SEO, Google Business, dan digital marketing.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kackreative.com/blog/">
+  <meta property="og:image" content="https://kackreative.com/og-image.jpg">
+
+  <title>Blog - Tips Digital Marketing & SEO | KAC Kreative</title>
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://kackreative.com/blog/">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/assets/kackreativeicon.ico">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    :root {
+      --bg: #FAF7F0;
+      --surface: #FFFFFF;
+      --text: #111827;
+      --muted: #6B7280;
+      --border: #E7E2D7;
+      --brand: #FF2D8D;
+      --brand-dark: #C2185B;
+      --brand-light: #FFE4EF;
+      --gold: #D4AF37;
+      --gold-soft: #FFF2C2;
+      --trust: #0F2A4A;
+      --cta: #FF4D2E;
+      --success: #10B981;
+      --info: #3B82F6;
+      --gradient-brand: linear-gradient(135deg, var(--brand) 0%, var(--cta) 100%);
+      --gradient-gold: linear-gradient(135deg, var(--gold) 0%, #F4CF47 100%);
+      --gradient-trust: linear-gradient(135deg, var(--trust) 0%, #1E3A5F 100%);
+      --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+      --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+      --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+      --shadow-xl: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 16px;
+      --radius-xl: 24px;
+      --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* ===== NAVBAR ===== */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+      transition: var(--transition);
+    }
+
+    .navbar.scrolled {
+      box-shadow: var(--shadow-md);
+    }
+
+    .nav-container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 72px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 1.5rem;
+      color: var(--trust);
+    }
+
+    .logo-icon {
+      width: 42px;
+      height: 42px;
+      background: var(--gradient-brand);
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .logo span {
+      background: var(--gradient-brand);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 500;
+      padding: 10px 18px;
+      border-radius: var(--radius-md);
+      transition: var(--transition);
+    }
+
+    .nav-links a:hover, .nav-links a.active {
+      color: var(--brand);
+      background: var(--brand-light);
+    }
+
+    .nav-cta {
+      background: var(--gradient-brand) !important;
+      color: white !important;
+      font-weight: 600 !important;
+      box-shadow: 0 4px 14px rgba(255,45,141,0.4);
+    }
+
+    .nav-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(255,45,141,0.5) !important;
+    }
+
+    .mobile-toggle {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 8px;
+      background: none;
+      border: none;
+    }
+
+    .mobile-toggle span {
+      width: 24px;
+      height: 2.5px;
+      background: var(--text);
+      border-radius: 2px;
+      transition: var(--transition);
+    }
+
+    /* ===== MOBILE MENU ===== */
+    .mobile-menu {
+      position: fixed;
+      top: 72px;
+      left: 0;
+      right: 0;
+      background: var(--surface);
+      padding: 24px;
+      box-shadow: var(--shadow-xl);
+      transform: translateY(-100%);
+      opacity: 0;
+      visibility: hidden;
+      transition: var(--transition);
+      z-index: 999;
+    }
+
+    .mobile-menu.active {
+      transform: translateY(0);
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .mobile-menu a {
+      display: block;
+      padding: 16px;
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 500;
+      border-radius: var(--radius-md);
+      transition: var(--transition);
+    }
+
+    .mobile-menu a:hover {
+      background: var(--brand-light);
+      color: var(--brand);
+    }
+
+    /* ===== BLOG HEADER ===== */
+    .blog-header {
+      padding-top: 120px;
+      padding-bottom: 60px;
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .blog-header-content {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+      text-align: center;
+    }
+
+    .blog-header-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      background: var(--brand-light);
+      color: var(--brand);
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      margin-bottom: 16px;
+    }
+
+    .blog-header h1 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 800;
+      color: var(--trust);
+      margin-bottom: 16px;
+    }
+
+    .blog-header p {
+      font-size: 1.1rem;
+      color: var(--muted);
+      max-width: 600px;
+      margin: 0 auto 32px;
+    }
+
+    /* ===== SEARCH BOX ===== */
+    .search-box {
+      position: relative;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 20px 60px 20px 24px;
+      font-size: 1.1rem;
+      border: 2px solid var(--border);
+      border-radius: var(--radius-xl);
+      background: var(--bg);
+      transition: var(--transition);
+      font-family: inherit;
+    }
+
+    .search-input:focus {
+      outline: none;
+      border-color: var(--brand);
+      box-shadow: 0 0 0 4px var(--brand-light);
+    }
+
+    .search-btn {
+      position: absolute;
+      right: 8px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 48px;
+      height: 48px;
+      background: var(--gradient-brand);
+      border: none;
+      border-radius: 50%;
+      color: white;
+      cursor: pointer;
+      transition: var(--transition);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+    }
+
+    .search-btn:hover {
+      transform: translateY(-50%) scale(1.1);
+    }
+
+    /* ===== CATEGORY FILTERS ===== */
+    .category-filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin-top: 24px;
+    }
+
+    .category-btn {
+      padding: 10px 20px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 50px;
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--muted);
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .category-btn:hover, .category-btn.active {
+      border-color: var(--brand);
+      color: var(--brand);
+      background: var(--brand-light);
+    }
+
+    /* ===== BLOG CONTENT ===== */
+    .blog-content {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 60px 24px;
+    }
+
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      gap: 32px;
+    }
+
+    .blog-card {
+      background: var(--surface);
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      transition: var(--transition);
+      border: 1px solid var(--border);
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .blog-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-xl);
+      border-color: transparent;
+    }
+
+    .blog-image {
+      width: 100%;
+      height: 220px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 4rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .blog-image::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.3), transparent);
+    }
+
+    .blog-category-tag {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      padding: 6px 14px;
+      background: var(--surface);
+      color: var(--brand);
+      font-size: 0.8rem;
+      font-weight: 600;
+      border-radius: 50px;
+      z-index: 1;
+    }
+
+    .blog-card-content {
+      padding: 28px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .blog-meta {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 12px;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .blog-meta span {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .blog-card h2 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: var(--trust);
+      line-height: 1.4;
+    }
+
+    .blog-card p {
+      color: var(--muted);
+      margin-bottom: 20px;
+      line-height: 1.7;
+      flex: 1;
+    }
+
+    .blog-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--brand);
+      font-weight: 600;
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    .blog-link:hover {
+      gap: 12px;
+    }
+
+    /* ===== SEARCH RESULTS ===== */
+    .search-results {
+      margin-bottom: 32px;
+      display: none;
+    }
+
+    .search-results.active {
+      display: block;
+    }
+
+    .results-info {
+      background: var(--surface);
+      padding: 20px 24px;
+      border-radius: var(--radius-lg);
+      margin-bottom: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .results-count {
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    .clear-search {
+      padding: 8px 16px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 50px;
+      font-size: 0.9rem;
+      color: var(--muted);
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .clear-search:hover {
+      border-color: var(--brand);
+      color: var(--brand);
+    }
+
+    .no-results {
+      text-align: center;
+      padding: 60px 24px;
+      background: var(--surface);
+      border-radius: var(--radius-xl);
+    }
+
+    .no-results span {
+      font-size: 4rem;
+      display: block;
+      margin-bottom: 16px;
+    }
+
+    .no-results h3 {
+      font-size: 1.5rem;
+      color: var(--trust);
+      margin-bottom: 8px;
+    }
+
+    .no-results p {
+      color: var(--muted);
+    }
+
+    /* ===== PAGINATION ===== */
+    .pagination {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 48px;
+    }
+
+    .page-btn {
+      width: 44px;
+      height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 50%;
+      font-weight: 500;
+      color: var(--text);
+      cursor: pointer;
+      transition: var(--transition);
+      text-decoration: none;
+    }
+
+    .page-btn:hover, .page-btn.active {
+      background: var(--gradient-brand);
+      border-color: transparent;
+      color: white;
+    }
+
+    /* ===== NEWSLETTER ===== */
+    .newsletter {
+      background: var(--gradient-trust);
+      padding: 80px 24px;
+      text-align: center;
+      color: white;
+    }
+
+    .newsletter-content {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .newsletter h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    .newsletter p {
+      color: rgba(255,255,255,0.8);
+      margin-bottom: 32px;
+    }
+
+    .newsletter-form {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .newsletter-input {
+      flex: 1;
+      min-width: 250px;
+      padding: 16px 24px;
+      border: none;
+      border-radius: var(--radius-lg);
+      font-size: 1rem;
+      font-family: inherit;
+    }
+
+    .newsletter-btn {
+      padding: 16px 32px;
+      background: var(--gradient-brand);
+      border: none;
+      border-radius: var(--radius-lg);
+      color: white;
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .newsletter-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(255,45,141,0.4);
+    }
+
+    /* ===== FOOTER ===== */
+    .footer {
+      background: var(--trust);
+      color: white;
+      padding: 80px 24px 32px;
+    }
+
+    .footer-grid {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 48px;
+      margin-bottom: 48px;
+    }
+
+    .footer-brand .logo {
+      color: white;
+      margin-bottom: 20px;
+    }
+
+    .footer-brand .logo span {
+      background: var(--gradient-gold);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .footer-brand p {
+      color: rgba(255,255,255,0.7);
+      margin-bottom: 24px;
+      line-height: 1.7;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 12px;
+    }
+
+    .social-link {
+      width: 44px;
+      height: 44px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 1.2rem;
+      color: #fff;
+      transition: all 0.3s ease;
+    }
+
+    .social-link:hover {
+      transform: translateY(-4px);
+    }
+
+    .footer-column h4 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 24px;
+      color: var(--gold);
+    }
+
+    .footer-links {
+      list-style: none;
+    }
+
+    .footer-links li {
+      margin-bottom: 14px;
+    }
+
+    .footer-links a {
+      color: rgba(255,255,255,0.7);
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    .footer-links a:hover {
+      color: white;
+      padding-left: 8px;
+    }
+
+    .footer-bottom {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding-top: 32px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .footer-bottom p {
+      color: rgba(255,255,255,0.5);
+      font-size: 0.95rem;
+    }
+
+    /* ===== WHATSAPP FLOAT ===== */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      z-index: 999;
+    }
+
+    .whatsapp-float a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 60px;
+      height: 60px;
+      background: #25D366;
+      color: white;
+      border-radius: 50%;
+      font-size: 1.8rem;
+      box-shadow: var(--shadow-lg);
+      transition: var(--transition);
+      animation: pulse-wa 2s infinite;
+    }
+
+    @keyframes pulse-wa {
+      0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+      70% { box-shadow: 0 0 0 20px rgba(37, 211, 102, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+    }
+
+    /* ===== SCROLL TO TOP ===== */
+    .scroll-top {
+      position: fixed;
+      bottom: 115px;
+      right: 35px;
+      width: 50px;
+      height: 50px;
+      background: var(--gradient-brand);
+      color: white;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      box-shadow: var(--shadow-lg);
+      opacity: 0;
+      visibility: hidden;
+      transition: var(--transition);
+      z-index: 999;
+    }
+
+    .scroll-top.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 1024px) {
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+
+      .mobile-toggle {
+        display: flex;
+      }
+
+      .blog-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .newsletter-form {
+        flex-direction: column;
+      }
+
+      .newsletter-input {
+        min-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="/" class="logo">
+        <div class="logo-icon"><img src="/assets/Logo_KAC_Kreative.webp" alt="KAC Kreative Logo" loading="lazy" width="70" height="70"></div>
+        <span>KAC Kreative</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="/">Beranda</a></li>
+        <li><a href="/#layanan">Layanan</a></li>
+        <li><a href="/blog/" class="active">Artikel</a></li>
+        <li><a href="/#tentang">Tentang</a></li>
+        <li><a href="/#kontak" class="nav-cta">Hubungi Kami</a></li>
+      </ul>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="/">Beranda</a>
+    <a href="/#layanan">Layanan</a>
+    <a href="/blog/" class="active">Artikel</a>
+    <a href="/#tentang">Tentang</a>
+    <a href="/#kontak" class="nav-cta">Hubungi Kami</a>
+  </div>
+
+  <!-- Blog Header -->
+  <header class="blog-header">
+    <div class="blog-header-content">
+      <span class="blog-header-badge">📝 Blog KAC Kreative</span>
+      <h1>Tips & Insight Digital Marketing</h1>
+      <p>Baca artikel terbaru kami seputar website, SEO, Google Business, dan strategi digital marketing untuk bisnis Anda.</p>
+
+      <div class="search-box">
+        <input type="text" class="search-input" id="searchInput" placeholder="Cari artikel... (contoh: SEO, Google Business)">
+        <button class="search-btn" id="searchBtn" aria-label="Search">🔍</button>
+      </div>
+
+      <div class="category-filters" id="categoryFilters">
+        <button class="category-btn active" data-category="all">Semua</button>
+        <button class="category-btn" data-category="Google Business">Google Business</button>
+        <button class="category-btn" data-category="SEO">SEO</button>
+        <button class="category-btn" data-category="Website">Website</button>
+        <button class="category-btn" data-category="Google Maps">Google Maps</button>
+        <button class="category-btn" data-category="Marketing">Marketing</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Blog Content -->
+  <main class="blog-content">
+    <!-- Search Results Info -->
+    <div class="search-results" id="searchResults">
+      <div class="results-info">
+        <span class="results-count" id="resultsCount"></span>
+        <button class="clear-search" id="clearSearch">Hapus Pencarian</button>
+      </div>
+    </div>
+
+    <!-- Blog Grid -->
+    <div class="blog-grid" id="blogGrid">
+      <!-- Blog cards will be dynamically generated -->
+    </div>
+
+    <!-- No Results -->
+    <div class="no-results" id="noResults" style="display: none;">
+      <span>🔍</span>
+      <h3>Tidak ada hasil ditemukan</h3>
+      <p>Coba kata kunci lain atau pilih kategori di atas</p>
+    </div>
+
+    <!-- Pagination -->
+    <div class="pagination" id="pagination">
+      <!-- Pagination will be dynamically generated -->
+    </div>
+  </main>
+
+  <!-- Newsletter -->
+  <section class="newsletter">
+    <div class="newsletter-content">
+      <h2>📬 Dapatkan Tips Digital Marketing</h2>
+      <p>Berlangganan newsletter kami dan dapatkan tips, tutorial, dan insight digital marketing langsung ke inbox Anda.</p>
+      <form class="newsletter-form" id="newsletterForm">
+        <input type="email" class="newsletter-input" placeholder="Email Anda" required>
+        <button type="submit" class="newsletter-btn">Berlangganan</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/" class="logo">
+          <div class="logo-icon"><img src="/assets/Logo_KAC_Kreative.webp" alt="KAC Kreative Logo" loading="lazy" width="70" height="70"></div>
+          <span>KAC Kreative</span>
+        </a>
+        <p>Digital creative agency yang membantu bisnis lokal dan UMKM Indonesia membangun kehadiran online yang profesional dan efektif.</p>
+        <div class="social-links">
+          <a href="https://instagram.com/kackreative" class="social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://facebook.com/kackreative" class="social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://linkedin.com/company/kackreative" class="social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://youtube.com/@kackreative" class="social-link" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-column">
+        <h4>Layanan</h4>
+        <ul class="footer-links">
+          <li><a href="/#layanan">Website Landing Page</a></li>
+          <li><a href="/#layanan">Desain Logo & Banner</a></li>
+          <li><a href="/#layanan">Verifikasi Google Business</a></li>
+          <li><a href="/#layanan">Optimasi Google Maps</a></li>
+          <li><a href="/#layanan">Jasa SEO</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Perusahaan</h4>
+        <ul class="footer-links">
+          <li><a href="/#tentang">Tentang Kami</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Karir</a></li>
+          <li><a href="/#kontak">Kontak</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Kontak</h4>
+        <ul class="footer-links">
+          <li><a href="/cdn-cgi/l/email-protection#066c67656d7c6e676861466d67656d746367726f70632865696b">📧 <span class="__cf_email__" data-cfemail="0369626068796b626d644368626068716662776a75662d606c6e">[email&#160;protected]</span></a></li>
+          <li><a href="https://wa.me/6281260835454">📱 +62 812 6083 5454</a></li>
+          <li><a href="#">📍 Medan, Indonesia</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 KAC Kreative. Hak Cipta Dilindungi.</p>
+      <p>Made with ❤️ in Indonesia</p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float -->
+  <div class="whatsapp-float">
+    <a href="https://wa.me/6281260835454" aria-label="Chat via WhatsApp" target="_blank" rel="noopener">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+
+  <!-- Scroll to Top -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+    // Blog posts data
+    const blogPosts = [
+      {
+        title: "5 Alasan Bisnis Anda Butuh Google Business Profile",
+        description: "Pelajari 5 alasan penting mengapa bisnis Anda membutuhkan Google Business Profile untuk meningkatkan visibilitas online dan menarik lebih banyak pelanggan.",
+        category: "Google Business",
+        date: "2025-12-26",
+        readTime: "5 menit",
+        url: "/blog/google-business-profile.html",
+        image: "linear-gradient(135deg, #0F2A4A 0%, #1E3A5F 100%)",
+        emoji: "📍"
+      },
+      {
+        title: "Panduan Lengkap SEO untuk UMKM Indonesia",
+        description: "Strategi SEO yang tepat dan praktis untuk bisnis kecil dan menengah yang ingin meningkatkan visibilitas di mesin pencari.",
+        category: "SEO",
+        date: "2025-12-20",
+        readTime: "8 menit",
+        url: "/blog/",
+        image: "linear-gradient(135deg, #FF2D8D 0%, #FF4D2E 100%)",
+        emoji: "📊"
+      },
+      {
+        title: "Cara Optimasi Google Maps untuk Bisnis Lokal",
+        description: "Tips lengkap untuk meningkatkan ranking bisnis Anda di Google Maps dan menjangkau lebih banyak pelanggan lokal.",
+        category: "Google Maps",
+        date: "2025-12-15",
+        readTime: "6 menit",
+        url: "/blog/",
+        image: "linear-gradient(135deg, #10B981 0%, #34D399 100%)",
+        emoji: "🗺️"
+      },
+      {
+        title: "Pentingnya Website untuk Bisnis di Era Digital",
+        description: "Mengapa setiap bisnis harus memiliki website profesional dan bagaimana website dapat meningkatkan kredibilitas bisnis Anda.",
+        category: "Website",
+        date: "2025-12-10",
+        readTime: "5 menit",
+        url: "/blog/",
+        image: "linear-gradient(135deg, #D4AF37 0%, #F4CF47 100%)",
+        emoji: "💻"
+      },
+      {
+        title: "Tips Desain Logo yang Memorable untuk Brand Anda",
+        description: "Panduan membuat logo yang efektif dan memorable untuk memperkuat identitas brand bisnis Anda.",
+        category: "Marketing",
+        date: "2025-12-05",
+        readTime: "4 menit",
+        url: "/blog/",
+        image: "linear-gradient(135deg, #8B5CF6 0%, #A78BFA 100%)",
+        emoji: "🎨"
+      },
+      {
+        title: "Strategi Digital Marketing untuk UMKM dengan Budget Terbatas",
+        description: "Cara efektif memasarkan bisnis Anda secara digital tanpa harus mengeluarkan biaya besar.",
+        category: "Marketing",
+        date: "2025-12-01",
+        readTime: "7 menit",
+        url: "/blog/",
+        image: "linear-gradient(135deg, #3B82F6 0%, #60A5FA 100%)",
+        emoji: "💰"
+      }
+    ];
+
+    let currentCategory = 'all';
+    let searchQuery = '';
+
+    // DOM Elements
+    const blogGrid = document.getElementById('blogGrid');
+    const searchInput = document.getElementById('searchInput');
+    const searchBtn = document.getElementById('searchBtn');
+    const searchResults = document.getElementById('searchResults');
+    const resultsCount = document.getElementById('resultsCount');
+    const clearSearch = document.getElementById('clearSearch');
+    const noResults = document.getElementById('noResults');
+    const categoryBtns = document.querySelectorAll('.category-btn');
+
+    // Render blog cards
+    function renderBlogPosts(posts) {
+      if (posts.length === 0) {
+        blogGrid.style.display = 'none';
+        noResults.style.display = 'block';
+        return;
+      }
+
+      blogGrid.style.display = 'grid';
+      noResults.style.display = 'none';
+
+      blogGrid.innerHTML = posts.map(post => {
+        const date = new Date(post.date).toLocaleDateString('id-ID', {
+          day: 'numeric', month: 'short', year: 'numeric'
+        });
+
+        return `
+          <a href="${post.url}" class="blog-card">
+            <div class="blog-image" style="background: ${post.image};">
+              <span class="blog-category-tag">${post.category}</span>
+              ${post.emoji}
+            </div>
+            <div class="blog-card-content">
+              <div class="blog-meta">
+                <span><i class="far fa-calendar"></i> ${date}</span>
+                <span><i class="far fa-clock"></i> ${post.readTime}</span>
+              </div>
+              <h2>${post.title}</h2>
+              <p>${post.description}</p>
+              <span class="blog-link">Baca Selengkapnya →</span>
+            </div>
+          </a>
+        `;
+      }).join('');
+    }
+
+    // Filter posts
+    function filterPosts() {
+      let filtered = blogPosts;
+
+      // Filter by category
+      if (currentCategory !== 'all') {
+        filtered = filtered.filter(post => post.category === currentCategory);
+      }
+
+      // Filter by search query
+      if (searchQuery) {
+        const query = searchQuery.toLowerCase();
+        filtered = filtered.filter(post =>
+          post.title.toLowerCase().includes(query) ||
+          post.description.toLowerCase().includes(query) ||
+          post.category.toLowerCase().includes(query)
+        );
+
+        searchResults.classList.add('active');
+        resultsCount.textContent = `Ditemukan ${filtered.length} hasil untuk "${searchQuery}"`;
+      } else {
+        searchResults.classList.remove('active');
+      }
+
+      renderBlogPosts(filtered);
+    }
+
+    // Category filter handlers
+    categoryBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        categoryBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        currentCategory = btn.dataset.category;
+        filterPosts();
+      });
+    });
+
+    // Search handlers
+    searchBtn.addEventListener('click', () => {
+      searchQuery = searchInput.value.trim();
+      filterPosts();
+    });
+
+    searchInput.addEventListener('keyup', (e) => {
+      if (e.key === 'Enter') {
+        searchQuery = searchInput.value.trim();
+        filterPosts();
+      }
+    });
+
+    clearSearch.addEventListener('click', () => {
+      searchInput.value = '';
+      searchQuery = '';
+      filterPosts();
+    });
+
+    // Initial render
+    renderBlogPosts(blogPosts);
+
+    // Navbar scroll effect
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+    // Mobile menu toggle
+    const mobileToggle = document.getElementById('mobileToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    mobileToggle.addEventListener('click', () => {
+      mobileToggle.classList.toggle('active');
+      mobileMenu.classList.toggle('active');
+    });
+
+    document.querySelectorAll('.mobile-menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileToggle.classList.remove('active');
+        mobileMenu.classList.remove('active');
+      });
+    });
+
+    // Scroll to top
+    const scrollTopBtn = document.getElementById('scrollTop');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 500) {
+        scrollTopBtn.classList.add('visible');
+      } else {
+        scrollTopBtn.classList.remove('visible');
+      }
+    });
+
+    scrollTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Newsletter form
+    document.getElementById('newsletterForm').addEventListener('submit', (e) => {
+      e.preventDefault();
+      // Add your newsletter subscription logic here
+      const email = e.target.querySelector('input').value;
+      console.log('Newsletter subscription:', email);
+      e.target.reset();
+    });
+  </script>
+</body>
+</html>
