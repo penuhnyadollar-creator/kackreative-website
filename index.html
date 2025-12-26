@@ -26,13 +26,13 @@
   <link rel="canonical" href="https://kackreative.com">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎨</text></svg>">
+  <link rel="icon" type="image/x-icon" href="/assets/kackreativeicon.ico">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     :root {
       --bg: #FAF7F0;
@@ -1153,27 +1153,44 @@
     }
 
     .social-links {
-      display: flex;
-      gap: 12px;
-    }
+  display: flex;
+  gap: 12px;
+}
 
-    .social-link {
-      width: 44px;
-      height: 44px;
-      background: rgba(255,255,255,0.1);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-decoration: none;
-      font-size: 1.2rem;
-      transition: var(--transition);
-    }
+.social-link {
+  width: 44px;
+  height: 44px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #fff;
+  transition: all 0.3s ease;
+}
 
-    .social-link:hover {
-      background: var(--brand);
-      transform: translateY(-4px);
-    }
+/* Hover dengan warna brand masing-masing */
+.social-link:hover {
+  transform: translateY(-4px);
+}
+
+.social-link[aria-label*="Instagram"]:hover {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
+.social-link[aria-label*="Facebook"]:hover {
+  background: #1877F2;
+}
+
+.social-link[aria-label*="LinkedIn"]:hover {
+  background: #0A66C2;
+}
+
+.social-link[aria-label*="YouTube"]:hover {
+  background: #FF0000;
+}
 
     .footer-column h4 {
       font-size: 1.1rem;
@@ -1427,7 +1444,7 @@
   <nav class="navbar" id="navbar">
     <div class="nav-container">
       <a href="#" class="logo">
-        <div class="logo-icon">K</div>
+        <div class="logo-icon"><img src="/assets/KAC_Kreative-Logo.webp" alt="KAC Kreative Logo" loading="lazy" width="158" height="52"></div>
         <span>KAC Kreative</span>
       </a>
 
@@ -1750,11 +1767,19 @@
           </a>
           <p>Digital creative agency yang membantu bisnis lokal dan UMKM Indonesia membangun kehadiran online yang profesional dan efektif.</p>
           <div class="social-links">
-            <a href="#" class="social-link" aria-label="Instagram">📷</a>
-            <a href="#" class="social-link" aria-label="Facebook">👥</a>
-            <a href="#" class="social-link" aria-label="LinkedIn">💼</a>
-            <a href="#" class="social-link" aria-label="YouTube">🎬</a>
-          </div>
+  <a href="https://instagram.com/kackreative" class="social-link" aria-label="Ikuti kami di Instagram" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-instagram" aria-hidden="true"></i>
+  </a>
+  <a href="https://facebook.com/kackreative" class="social-link" aria-label="Ikuti kami di Facebook" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-facebook-f" aria-hidden="true"></i>
+  </a>
+  <a href="https://linkedin.com/company/kackreative" class="social-link" aria-label="Ikuti kami di LinkedIn" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+  </a>
+  <a href="https://youtube.com/@kackreative" class="social-link" aria-label="Subscribe channel YouTube kami" target="_blank" rel="noopener noreferrer">
+    <i class="fab fa-youtube" aria-hidden="true"></i>
+  </a>
+</div>
         </div>
 
         <div class="footer-column">
@@ -1783,8 +1808,8 @@
           <h4>Kontak</h4>
           <ul class="footer-links">
             <li><a href="/cdn-cgi/l/email-protection#bdd7dcded6c7d5dcd3dafdd6dcded6cfd8dcc9d4cbd893ded2d0">📧 <span class="__cf_email__" data-cfemail="0369626068796b626d644368626068716662776a75662d606c6e">[email&#160;protected]</span></a></li>
-            <li><a href="https://wa.me/6281260835454">📱 +62 812 3456 7890</a></li>
-            <li><a href="#">📍 Jakarta, Indonesia</a></li>
+            <li><a href="https://wa.me/6281260835454">📱 +62 812 6083 5454</a></li>
+            <li><a href="#">📍 Medan, Indonesia</a></li>
           </ul>
         </div>
       </div>
@@ -1807,11 +1832,11 @@
     "name": "KAC Kreative",
     "description": "Jasa pembuatan website landing page, desain logo & banner, verifikasi Google Business, optimasi Google Maps dan SEO profesional di Indonesia.",
     "url": "https://kackreative.com",
-    "telephone": "+62-812-3456-7890",
+    "telephone": "+62-812-6083-5454",
     "email": "jackzhang@kackreative.com",
     "address": {
       "@type": "PostalAddress",
-      "addressLocality": "Jakarta",
+      "addressLocality": "Medan",
       "addressCountry": "ID"
     },
     "sameAs": [
