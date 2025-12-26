@@ -1,122 +1,109 @@
-{
-  "version": "1.0",
-  "lastUpdated": "2025-01-20",
+{ "version": "1.2",
+  "lastUpdated": "2025-12-26",
   "pages": [
     {
-      "id": "home",
       "type": "page",
       "title": "Beranda - KAC Kreative",
-      "description": "Jasa pembuatan website landing page, desain logo & banner, verifikasi Google Business, optimasi Google Maps dan SEO profesional di Indonesia.",
-      "url": "index.html",
-      "keywords": ["kac kreative", "jasa website", "digital agency", "indonesia"]
+      "description": "KAC Kreative - Jasa pembuatan website landing page, desain logo & banner, verifikasi Google Business, optimasi Google Maps dan SEO profesional di Indonesia.",
+      "url": "/",
+      "keywords": ["jasa website", "landing page", "digital agency", "indonesia"]
     },
     {
-      "id": "layanan-website",
       "type": "service",
       "title": "Pembuatan Website Landing Page",
-      "description": "Website profesional yang dioptimasi untuk konversi, loading cepat, dan tampilan menarik di semua perangkat. Desain modern & responsif, optimasi kecepatan loading, SEO on-page terintegrasi, free domain & hosting 1 tahun.",
-      "url": "index.html#layanan",
-      "keywords": ["website", "landing page", "web design", "responsive", "seo"]
+      "description": "Website profesional yang dioptimasi untuk konversi, loading cepat, dan tampilan menarik di semua perangkat. Desain modern & responsif dengan SEO on-page terintegrasi.",
+      "url": "/#layanan",
+      "keywords": ["website", "landing page", "responsive", "SEO", "web design"]
     },
     {
-      "id": "layanan-logo",
       "type": "service",
       "title": "Desain Logo & Banner",
-      "description": "Identitas visual yang kuat dan memorable untuk brand Anda, dibuat oleh desainer profesional. Logo unik & original, banner untuk sosial media, file vector berkualitas tinggi, revisi unlimited.",
-      "url": "index.html#layanan",
+      "description": "Identitas visual yang kuat dan memorable untuk brand Anda, dibuat oleh desainer profesional. Logo unik & original dengan revisi unlimited.",
+      "url": "/#layanan",
       "keywords": ["logo", "banner", "desain", "branding", "visual identity"]
     },
     {
-      "id": "layanan-gbp",
       "type": "service",
       "title": "Verifikasi Google Business",
-      "description": "Bantu verifikasi profil bisnis Anda di Google agar muncul di hasil pencarian dan Google Maps. Proses verifikasi cepat, setup profil lengkap, optimasi informasi bisnis, panduan pengelolaan.",
-      "url": "index.html#layanan",
-      "keywords": ["google business", "gbp", "google my business", "verifikasi", "profil bisnis"]
+      "description": "Bantu verifikasi profil bisnis Anda di Google agar muncul di hasil pencarian dan Google Maps. Proses verifikasi cepat dengan setup profil lengkap.",
+      "url": "/#layanan",
+      "keywords": ["google business", "verifikasi", "google my business", "profil bisnis"]
     },
     {
-      "id": "layanan-gmaps",
       "type": "service",
       "title": "Optimasi Google Maps",
-      "description": "Tingkatkan ranking bisnis Anda di Google Maps untuk menjangkau lebih banyak pelanggan lokal. Riset keyword lokal, optimasi listing bisnis, strategi review management, laporan bulanan.",
-      "url": "index.html#layanan",
-      "keywords": ["google maps", "local seo", "maps optimization", "bisnis lokal"]
+      "description": "Tingkatkan ranking bisnis Anda di Google Maps untuk menjangkau lebih banyak pelanggan lokal. Riset keyword lokal dan strategi review management.",
+      "url": "/#layanan",
+      "keywords": ["google maps", "optimasi", "lokal", "ranking", "maps"]
     },
     {
-      "id": "layanan-seo",
       "type": "service",
       "title": "Jasa SEO Profesional",
-      "description": "Optimalkan website Anda agar muncul di halaman pertama Google untuk kata kunci yang relevan. Audit SEO komprehensif, optimasi on-page & off-page, content strategy, tracking & reporting.",
-      "url": "index.html#layanan",
-      "keywords": ["seo", "search engine optimization", "ranking google", "optimasi website"]
+      "description": "Optimalkan website Anda agar muncul di halaman pertama Google untuk kata kunci yang relevan. Audit SEO komprehensif dengan optimasi on-page & off-page.",
+      "url": "/#layanan",
+      "keywords": ["SEO", "optimasi", "google", "ranking", "search engine"]
     }
   ],
   "posts": [
     {
-      "id": "post-seo-pemula",
-      "type": "article",
-      "title": "Cara Optimasi SEO Website untuk Pemula",
-      "description": "Pelajari teknik SEO dasar untuk meningkatkan ranking website Anda di Google. Panduan lengkap optimasi on-page dan off-page untuk pemula.",
-      "url": "blog/cara-optimasi-seo-pemula.html",
-      "category": "SEO",
-      "date": "2025-01-15",
-      "readTime": "5 menit",
-      "keywords": ["seo", "optimasi", "pemula", "ranking", "google", "on-page", "off-page"]
-    },
-    {
-      "id": "post-google-business",
       "type": "article",
       "title": "5 Alasan Bisnis Anda Butuh Google Business Profile",
-      "description": "Mengapa Google Business Profile penting untuk bisnis lokal? Simak 5 manfaat utama yang bisa meningkatkan visibilitas dan penjualan bisnis Anda.",
-      "url": "blog/alasan-bisnis-butuh-google-business.html",
+      "description": "Pelajari 5 alasan penting mengapa bisnis Anda membutuhkan Google Business Profile untuk meningkatkan visibilitas online dan menarik lebih banyak pelanggan. Dari visibilitas pencarian lokal hingga insight pelanggan.",
+      "url": "/blog/google-business-profile.html",
       "category": "Google Business",
-      "date": "2025-01-12",
-      "readTime": "4 menit",
-      "keywords": ["google business", "gbp", "bisnis lokal", "visibilitas", "penjualan"]
-    },
-    {
-      "id": "post-landing-page",
-      "type": "article",
-      "title": "Tips Membuat Landing Page yang Mengkonversi",
-      "description": "Landing page yang efektif bisa meningkatkan konversi hingga 300%. Pelajari elemen penting dan best practice dalam membuat landing page.",
-      "url": "blog/tips-landing-page-konversi.html",
-      "category": "Website",
-      "date": "2025-01-10",
-      "readTime": "6 menit",
-      "keywords": ["landing page", "konversi", "website", "cta", "desain"]
-    },
-    {
-      "id": "post-google-maps",
-      "type": "article",
-      "title": "Panduan Lengkap Optimasi Google Maps untuk Bisnis Lokal",
-      "description": "Tingkatkan visibilitas bisnis Anda di Google Maps dengan strategi optimasi yang tepat. Cocok untuk restoran, toko, dan jasa lokal.",
-      "url": "blog/panduan-optimasi-google-maps.html",
-      "category": "Google Maps",
-      "date": "2025-01-08",
-      "readTime": "7 menit",
-      "keywords": ["google maps", "bisnis lokal", "restoran", "toko", "jasa", "optimasi"]
-    },
-    {
-      "id": "post-desain-logo",
-      "type": "article",
-      "title": "Pentingnya Desain Logo untuk Branding Bisnis",
-      "description": "Logo adalah wajah bisnis Anda. Pelajari mengapa desain logo profesional penting dan bagaimana membuatnya memorable.",
-      "url": "blog/pentingnya-desain-logo.html",
-      "category": "Desain",
-      "date": "2025-01-05",
-      "readTime": "4 menit",
-      "keywords": ["logo", "branding", "desain", "identitas", "bisnis"]
-    },
-    {
-      "id": "post-content-marketing",
-      "type": "article",
-      "title": "Strategi Content Marketing untuk UMKM",
-      "description": "Bangun kehadiran online yang kuat dengan strategi content marketing yang tepat sasaran untuk bisnis UMKM Indonesia.",
-      "url": "blog/strategi-content-marketing-umkm.html",
-      "category": "Marketing",
-      "date": "2025-01-02",
+      "date": "2025-12-26",
       "readTime": "5 menit",
-      "keywords": ["content marketing", "umkm", "strategi", "online", "indonesia"]
+      "keywords": ["google business profile", "google my business", "visibilitas bisnis", "pencarian lokal", "SEO lokal", "ulasan pelanggan"]
+    },
+    {
+      "type": "article",
+      "title": "Panduan Lengkap SEO untuk UMKM Indonesia",
+      "description": "Strategi SEO yang tepat dan praktis untuk bisnis kecil dan menengah yang ingin meningkatkan visibilitas di mesin pencari. Termasuk tips on-page dan off-page SEO.",
+      "url": "/blog/",
+      "category": "SEO",
+      "date": "2025-12-20",
+      "readTime": "8 menit",
+      "keywords": ["SEO", "UMKM", "optimasi", "mesin pencari", "keyword", "backlink"]
+    },
+    {
+      "type": "article",
+      "title": "Cara Optimasi Google Maps untuk Bisnis Lokal",
+      "description": "Tips lengkap untuk meningkatkan ranking bisnis Anda di Google Maps dan menjangkau lebih banyak pelanggan lokal. Strategi review dan NAP consistency.",
+      "url": "/blog/",
+      "category": "Google Maps",
+      "date": "2025-12-15",
+      "readTime": "6 menit",
+      "keywords": ["google maps", "bisnis lokal", "optimasi", "review", "lokasi"]
+    },
+    {
+      "type": "article",
+      "title": "Pentingnya Website untuk Bisnis di Era Digital",
+      "description": "Mengapa setiap bisnis harus memiliki website profesional dan bagaimana website dapat meningkatkan kredibilitas bisnis Anda di mata pelanggan.",
+      "url": "/blog/",
+      "category": "Website",
+      "date": "2025-12-10",
+      "readTime": "5 menit",
+      "keywords": ["website", "bisnis", "digital", "profesional", "kredibilitas"]
+    },
+    {
+      "type": "article",
+      "title": "Tips Desain Logo yang Memorable untuk Brand Anda",
+      "description": "Panduan membuat logo yang efektif dan memorable untuk memperkuat identitas brand bisnis Anda. Prinsip desain dan tips dari profesional.",
+      "url": "/blog/",
+      "category": "Marketing",
+      "date": "2025-12-05",
+      "readTime": "4 menit",
+      "keywords": ["logo", "desain", "brand", "identitas", "visual"]
+    },
+    {
+      "type": "article",
+      "title": "Strategi Digital Marketing untuk UMKM dengan Budget Terbatas",
+      "description": "Cara efektif memasarkan bisnis Anda secara digital tanpa harus mengeluarkan biaya besar. Tips gratis dan berbayar yang bisa langsung diterapkan.",
+      "url": "/blog/",
+      "category": "Marketing",
+      "date": "2025-12-01",
+      "readTime": "7 menit",
+      "keywords": ["digital marketing", "UMKM", "budget", "marketing gratis", "strategi"]
     }
   ]
 }
